@@ -8,7 +8,7 @@
     <title>HomeworkSMP</title>
 </head>
 <body>
-    <div class="box">
+    <div class="box blur">
         <h1>HomeworkSMP</h1>
         <p>A SMP filled with creativity, a bunch of <s>insane</s> teens with passion.</p>
     </div>
@@ -17,15 +17,26 @@
         <div>
             a
         </div>
-        <p>HomeworkSMP All Rights Reserved. Made with 💚🤍💙 by Acto.</p>
+        <p>Licensed under GPL-3.0. Made with 💚🤍💙 by Acto.</p>
     </footer>
 
     <script>
-        var images = Math.floor(Math.random() * 5);
-        var usernames = ["@acto.", "@williamhorning", "@williamhorning", "@avogato_the_ailurophile", "@avogato_the_ailurophile"];
+        var multi1 = Math.floor(Math.random() * 7) + 1;
+        var multi2 = Math.floor(Math.random() * 7) + 1;
+        var images = multi1 * multi2;
+        var usernames = ["", "@acto.", "@williamhorning", "@williamhorning", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile", "@avogato_the_ailurophile"];
         var path = `./assets/bkg/${images}.png`;
         document.body.style.backgroundImage = `url(${path})`;
-        document.getElementsByTagName("footer")[0].getElementsByTagName("div")[0].innerHTML = `Background Image by ${usernames[images]} \n`;
+        document.getElementsByTagName("footer")[0].getElementsByTagName("div")[0].innerHTML = `<br>Background Image ${images} by ${usernames[images]} \n`;
+
+        setInterval(() => {
+            multi1 = Math.floor(Math.random() * 7) + 1;
+            multi2 = Math.floor(Math.random() * 7) + 1;
+            images = multi1 * multi2;
+            
+            document.body.style.backgroundImage = `url(./assets/bkg/${images}.png)`;
+            document.getElementsByTagName("footer")[0].getElementsByTagName("div")[0].innerHTML = `<br>Background Image ${images} by ${usernames[images]} \n`;
+        }, 5000);
     </script>
 </body>
 </html>

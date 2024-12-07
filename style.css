@@ -16,7 +16,7 @@ body {
     border-color: white;
     border-style: solid;
     border-radius: 7px;
-    background-color: rgba(80, 80, 80, 0.75);
+    background-color: #808080BF;
     margin-top: 40vh;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -29,5 +29,4 @@ body {
 footer {
     width: 100%;
     text-align: center;
-
 }
