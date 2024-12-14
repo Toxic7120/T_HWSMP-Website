@@ -29,4 +29,17 @@ body {
 footer {
     width: 100%;
     text-align: center;
+    border: 2px white solid;
+    border-radius: 5px;
+}
+
+.foot {
+    background-color: #808080BF;
+    width: 100em;
+    margin-left: 115px;
+}
+
+body {
+    text-align: center;
+    transition: 3s;
 }
